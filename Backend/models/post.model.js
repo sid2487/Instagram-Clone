@@ -20,7 +20,7 @@ const postSchema = new mongoose.Schema({
         unique: true,
     }],
     comments: [{
-        type: mongoose.model.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Comment',
     }]
 });
